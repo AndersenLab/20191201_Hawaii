@@ -82,11 +82,11 @@ isolation <- readr::read_csv("data/fulcrum/nematode_isolation.csv") %>%
 ### 3: Use exiftool to extract lat, long elevation. ONLY NEED TO RUN ONCE ###
 #############################################################################
 
-# # Read in data from photos. Need to install using ‘brew install exiftool’ in terminal.
-# comm <- paste0("exiftool -coordFormat '%+.6f' -csv -ext jpg ",
-#                 getwd(),
-#                 "/photos/*")
-# 
+# Read in data from photos. Need to install using ‘brew install exiftool’ in terminal.
+comm <- paste0("exiftool -coordFormat '%+.6f' -csv -ext jpg ",
+                getwd(),
+                "/photos/*")
+
 # # Exif Data
 #  exif <- readr::read_csv(pipe(comm)) %>%
 #    dplyr::mutate(SourceFile = stringr::str_replace(basename(SourceFile), ".jpg", "")) %>%
@@ -160,17 +160,17 @@ df1 <- dplyr::full_join(isolation, collection, by = c("c_label_id" = "fulcrum_id
 # selecting to retain the isolation record based on worm presence. Yes > tracks > no.
 # If both isolation records indicate "tracks only" or "no" then we retain the earliest record.
 # In no cases did both isolation records indicate worms were present on c_label.
-duplicated_isolations_to_remove <- c("5535470e-d82d-4ca4-ac77-860ea62c51c1",
-                                    "340dbd85-7b9a-4ecb-be5f-ac1ef944e057",
-                                    "88a12c25-a129-45e0-9306-c3a232b33552",
-                                    "8ad23d90-c0b8-4aa1-b135-f2d1fead94d4",
-                                    "036a80ac-3372-4c3c-b40d-edfa0a9d68cc",
-                                    "6dbecd43-e4e3-405f-b4dc-e757ad4449a5",
-                                    "6fa1a690-ea42-49a7-b86d-e7181b9f68bf",
-                                    "90f59eb1-abf8-4e7a-8ebc-d3148527b831",
-                                    "cee218c8-aad0-4e1b-9a04-0b084439cfab")
-df1 <- df1 %>%
-  dplyr::filter(!isolation_id %in% duplicated_isolations_to_remove)
+# duplicated_isolations_to_remove <- c("5535470e-d82d-4ca4-ac77-860ea62c51c1",
+#                                     "340dbd85-7b9a-4ecb-be5f-ac1ef944e057",
+#                                     "88a12c25-a129-45e0-9306-c3a232b33552",
+#                                     "8ad23d90-c0b8-4aa1-b135-f2d1fead94d4",
+#                                     "036a80ac-3372-4c3c-b40d-edfa0a9d68cc",
+#                                     "6dbecd43-e4e3-405f-b4dc-e757ad4449a5",
+#                                     "6fa1a690-ea42-49a7-b86d-e7181b9f68bf",
+#                                     "90f59eb1-abf8-4e7a-8ebc-d3148527b831",
+#                                     "cee218c8-aad0-4e1b-9a04-0b084439cfab")
+# df1 <- df1 %>%
+#   dplyr::filter(!isolation_id %in% duplicated_isolations_to_remove)
 
 ###################################################################
 ### 5: Joining C_lables with S_labels                           ###
@@ -187,7 +187,7 @@ df2 <- readr::read_csv("data/fulcrum/nematode_isolation_s_labeled_plates.csv") %
 
 # OPTIONAL: remove duplicated s_label
 df2 <- df2 %>%
-  # add a count of row number to grouping variable to remove duplicate s_label (S-0298).
+  # add a count of row number to grouping variable to remove duplicate s_label (S-11690).
   dplyr::group_by(s_label) %>%
   dplyr::mutate(n = row_number()) %>%
   dplyr::mutate(n = ifelse(is.na(s_label), NA, n)) %>%
@@ -291,7 +291,7 @@ df3[filter_box(df3$collection_longitude, df3$collection_latitude, c(-159.613624,
 # writeLines(photo_comms$comm, con = file("scripts/rename_photos.sh"))
 
 ###################################################################
-### 10: Merge automated blast data                              ###
+### 10: OPTIONAL Merge automated blast data                     ###
 ###################################################################
 
 # # Merge in blast data; Take top hit
@@ -307,12 +307,12 @@ df3[filter_box(df3$collection_longitude, df3$collection_latitude, c(-159.613624,
 # Select the string of data found between the slashes after spreadsheets/d in your Google Sheet URL.
 # use stringr to find s_labels from s_label column
 
-genotyping_sheet_raw <- googlesheets::gs_key("1TMgx1TRZ4cgRn24eQCzoy378fKcYRgMrYVlrqgMXVQA") %>%
-  googlesheets::gs_read("Sheet1", na = c("#N/A", "NA", ""),
-                        by = c("c_label", "s_label")) %>%
+genotyping_sheet_raw <- googlesheets::gs_key("1XcfOLYGZcbXzT_VznDgBSWW10QfIv3eE7YEHOaGpTic") %>%
+  googlesheets::gs_read("genotyping", na = c("#N/A", "NA", ""),
+                        by = c("s_label")) %>%
   dplyr::filter(!is.na(s_label)) %>%
   # remove c_label variable (this column was hand typed and contains at least 2 errors)
-  dplyr::select(-c_label, s_label, species_id, lysis_date, pcr_date, ITS2_pcr_product, rhabditid_pcr_product, notes)
+  dplyr::select(s_label, species_id, ITS2_pcr_product, rhabditid_pcr_product, notes, manual_blast_notes, ECA_dirty, ECA_clean)
 
 # find s_labels in genotyping sheet
 slabels <- str_subset(genotyping_sheet_raw$s_label, pattern = "S-")
@@ -337,6 +337,8 @@ fulcrum_dat <- df3 %>%
                 collection_id,
                 isolation_id,
                 species_id,
+                ECA_dirty,
+                ECA_clean,
                 collection_by,
                 collection_datetime_UTC,
                 collection_date_UTC,
@@ -353,7 +355,6 @@ fulcrum_dat <- df3 %>%
                 flag_ambient_temperature_run,
                 ambient_humidity,
                 substrate_temperature,
-                substrate_moisture,
                 fulcrum_altitude,
                 geonames_altitude,
                 altitude,
@@ -378,10 +379,9 @@ fulcrum_dat <- df3 %>%
                 isolation_longitude,
                 worms_on_sample,
                 approximate_number_of_worms,
-                lysis_date,
-                pcr_date,
                 ITS2_pcr_product,
                 rhabditid_pcr_product,
+                manual_blast_notes, 
                 notes)
 
 # export R dataframe

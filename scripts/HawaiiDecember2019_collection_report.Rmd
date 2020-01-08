@@ -1,7 +1,7 @@
 ---
-title: "2019OctoberHawaii_report"
+title: "2019DecemberHawaii_report"
 author: "Tim C."
-date: "12/4/2019"
+date: "01/08/2020"
 output:
   html_document:
     toc: true
@@ -37,7 +37,7 @@ load('data/fulcrum/fulcrum_dat.Rda')
 ### set color palettes                        ###
 #################################################
 species_palette <- c("C. elegans" = "#BE0032", #7
-                     #"C. oiwi" =  "#875692", #4 
+                     "C. oiwi" =  "#875692", #4 
                      "C. tropicalis" = "#F38400", #5 
                      "Panagrolaimus sp." = "#C2B280", #8
                      "Oscheius sp." = "#F3C300", #3
@@ -70,8 +70,8 @@ filter_box <- function(longitude, latitude, coords) {
 # coordinates for islands. Note need to comment out islands not collected from in this list
 islands = list(  "Kauai" = c(-159.830818,21.750571,-159.230003,22.350076),
   "Oahu" = c(-158.323116,21.112767,-157.623081,21.814254),
-  #"Molokai" = c(-157.3515,20.793,-156.6515,21.4956),
-  #"Maui" = c(-156.745977,20.405495,-155.942774,21.207099),
+  "Molokai" = c(-157.3515,20.793,-156.6515,21.4956),
+  "Maui" = c(-156.745977,20.405495,-155.942774,21.207099),
   "Big Island" = c(-156.3651,18.8049,-154.765,20.4064)
 )
 
@@ -160,10 +160,10 @@ map_overview <- function(F, label, cso, geoms, face = "plain") {
   without_label <- plot_grid(plotlist = island_set,
             labels = c("A - Kauai",
                        "B - O'ahu",
-                       #"C - Moloka'i",
-                       #"D - Maui",
-                       "C - Island of Hawai'i",
-                       "D", ""
+                       "C - Moloka'i",
+                       "D - Maui",
+                       "E - Island of Hawai'i",
+                       "F", ""
             ),
             label_y = 0.98,
             hjust = 0,
@@ -528,12 +528,12 @@ knitr::kable(`duplication in nematode_isolation_s_labeled_plates.csv`, caption =
 # part 4 find duplication in genotyping google sheet                  ###
 #########################################################################
 # you will have to find the genotyping sheet specific to this collection trip for this code to work. Paste the PUBLISHED googlesheet URL in gs_key below.
-`duplication in genotyping sheet` <- googlesheets::gs_key("1TMgx1TRZ4cgRn24eQCzoy378fKcYRgMrYVlrqgMXVQA") %>%
-  googlesheets::gs_read("Sheet1", na = c("#N/A", "NA", ""),
-                        by = c("c_label", "s_label")) %>%
+`duplication in genotyping sheet` <- googlesheets::gs_key("1XcfOLYGZcbXzT_VznDgBSWW10QfIv3eE7YEHOaGpTic") %>%
+  googlesheets::gs_read("genotyping", na = c("#N/A", "NA", ""),
+                        by = c("s_label")) %>%
   dplyr::filter(!is.na(s_label)) %>%
   # remove c_label variable (this column was hand typed and contains at least 2 errors)
-  dplyr::select(-c_label, s_label, species_id, lysis_date, pcr_date, ITS2_pcr_product, rhabditid_pcr_product, notes) %>%
+  dplyr::select(s_label, species_id, ITS2_pcr_product, rhabditid_pcr_product, notes, manual_blast_notes, ECA_dirty, ECA_clean) %>%
   add_count(s_label) %>%
   dplyr::filter(n > 1)
 
@@ -558,12 +558,17 @@ knitr::kable(`duplication in genotyping sheet`, caption = glue::glue("{n_duplica
   kable_styling() %>%
   scroll_box(width = "100%", height = "200px")
 ```
-<br> These dataframes are filtered to show the duplications in the raw data from fulcrum or the genotyping sheet. If the dataframe are empty there is no duplication.
+<br> These dataframes are filtered to show the duplications in the raw data from fulcrum or the genotyping sheet. If the dataframe are empty there is no duplication.<br>
+**Duplication issue 1:** Duplication in feild sampling comes from collection_id C-0871.<br>
+**Possible Solution:** Remove Gaotian's instance of C-0871 after extracting GPS location for other Kalopa collections.<br>
+**Duplication issue 2:** Duplicated isolation record for S-11690.<br> 
+**Solution:** The extra S-11690 record was removed in Step 5 of process_fulcrum_data.R script.<br>
 
 ### project overview
 ```{r, echo=F, warning = F, message=F, fig.width=11, fig.height=7.5}
 # setup overview plot groups
 overview_plot_df <- fulcrum_dat %>%
+  dplyr::filter(!is.na(collection_id)) %>%
   dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
                                    ifelse(worms_on_sample == "Tracks", "Tracks only",
                                           ifelse(worms_on_sample == "Yes" & is.na(ITS2_pcr_product), "Not genotyped",
@@ -582,8 +587,27 @@ overview_plot_df <- fulcrum_dat %>%
                                                                                 "unknown",
                                                                                 "Oscheius sp.",
                                                                                 "Panagrolaimus sp.",
+                                                                                "O. sp. AH13",
+                                                                                "O. sp",
+"H. bacteriaphora",
+"O. tipulae",
+"Rhabditella axei",
+"Chryseobacterium indologenes",
+"Mesorhabditis",
+"Troglostrongylus brevior",
+"Auanema freiburgensis",
+"Mesorhabditis belari",
+"O. sp.",
+"O. myriophilus",
+"No amplification",
+"No significance",
+"C. sp. 21",
+"Caenorhabditis sp. p LS-2018",
+"C. plicata",
                                                                                 "-",
-                                                                                NA),
+                                                                                NA,
+                                                                                "NA"
+                                                                                ),
                                                               "Other PCR +", species_id)))))) %>%
   dplyr::select(collection_id, collection_type, collection_island, species_id, ITS2_pcr_product, worms_on_sample, collection_longitude, collection_latitude) %>%
   dplyr::distinct(collection_id, collection_type, .keep_all=T) %>% 
@@ -662,3 +686,93 @@ overview_plot <- map_overview(plot_bar_chart_no_legend, plot_bar_chart_legend, o
 overview_plot
 
 ```
+
+### Target species map
+```{r, echo=F, warning = F, message=F}
+# Target species map function
+# Map_collection function for reviewing collection locations
+map_target_species <- function(df, color_use) {
+  
+  icos <- iconList(
+    red = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/red.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+    ),
+    orange = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/orange.svg"),
+     iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  ),
+    blue = makeIcon(
+      iconUrl = paste0("https://storage.googleapis.com/andersenlab.org/img/blue.svg"),
+      iconWidth = 15, iconHeight = 15,
+      popupAnchorX = 0.001, popupAnchorY = -15,
+      iconAnchorX = 15/2, iconAnchorY = 15
+  )
+)
+  df <- dplyr::filter(df, !is.na(df[[color_use]])) %>%
+    dplyr::mutate(substrate=ifelse(is.na(substrate), "", substrate)) %>%
+    dplyr::arrange(species_id)
+  
+  #print(df)
+ 
+  
+  attach(df)
+  leaflet::leaflet(data = df, width = "100%", options = list(zoomControl = T)) %>% 
+    leaflet::addTiles( 
+      paste0( 
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
+        jsonlite::read_json("data/thunderforest.json")$key)  
+    ) %>%
+    leaflet::addMarkers(~collection_longitude,
+                        ~collection_latitude,
+                        popup = glue::glue("<h2>{collection_id}</h2><hr />
+                                           <strong>collection uplaoded by:</strong> {collection_by}<br />
+                                           <strong>latitidue, longitude:</strong> {format(round(collection_latitude, 6), nsmall = 6)}, {format(round(collection_longitude, 6), nsmall = 6)}<br />
+                                           <strong>C. elegans:</strong> {`C. elegans count`}<br />
+                                           <strong>C. briggsae:</strong> {`C. briggsae count`}<br />
+                                           <strong>C. tropicalis:</strong> {`C. tropicalis count`}<br /><br />"),
+                        popupOptions(maxWidth = 500),
+                        icon = icos[ df[[color_use]] ] )
+  
+  #htmlwidgets::saveWidget(m, tempfile(), selfcontained = FALSE)
+  #webshot::webshot("temp.html", file = "map.png",
+  #        cliprect = "viewport", vwidth = 1000, vheight = 1000)
+}
+
+# Make df for diagnostic plotting
+target_df <- fulcrum_dat %>%
+  dplyr::filter(!is.na(collection_id)) %>%
+  dplyr::filter(species_id %in% c("C. elegans", "C. briggsae", "C. tropicalis")) %>%
+  dplyr::group_by(collection_id, species_id) %>%
+  dplyr::mutate(species_count = n()) %>%
+  dplyr::mutate(`C. elegans count` = ifelse(species_id == "C. elegans", species_count, 0),
+                `C. briggsae count` = ifelse(species_id == "C. briggsae", species_count, 0),
+                `C. tropicalis count` = ifelse(species_id == "C. tropicalis", species_count, 0)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, species_id, .keep_all =T) %>%
+  dplyr::arrange(collection_id, desc(species_count)) %>%
+  dplyr::group_by(collection_id) %>%
+  dplyr::mutate(`C. elegans count` = sum(`C. elegans count`),
+                `C. briggsae count` = sum(`C. briggsae count`),
+                `C. tropicalis count` = sum(`C. tropicalis count`)) %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct(collection_id, .keep_all =T)
+  
+
+# map collection for diagnostic
+target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(species_id == "C. elegans" ~ "red",
+                                                                                species_id == "C. briggsae" ~ "blue",
+                                                                                species_id == "C. tropicalis" ~ "orange")), "color")
+
+target_map
+```
+
+### Concerns as of 20200108
+**1.** One collection (C-0882) has a c-label (C-0882) rather than an s-label for isolation_id.<br>
+**2.** One s-label is S-XXXXX? Could this resolve concern 1?<br>
+**3.** Collections with lat,long in Volcano need to be manually corrected to Kalopa. Gaotian and Clay will address.<br>
+This should also resolve the duplicated collection_id (C-0871).<br>
