@@ -401,24 +401,7 @@ isolation_counts3 <- fulcrum_dat %>%
   dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
                                    ifelse(worms_on_sample == "Tracks", "Tracks only",
                                           ifelse(worms_on_sample == "Yes" & is.na(ITS2_pcr_product), "Not genotyped",
-                                                 ifelse(worms_on_sample == "Yes" & ITS2_pcr_product == 0, "PCR -",
-                                                       ifelse(species_id %in% c("Chabertia ovina",
-                                                                                "Choriorhabditis cristata",
-                                                                                "Choriorhabditis sp.",
-                                                                                "Heterhabditis zealandica",
-                                                                                "Mesorhabditis sp.",
-                                                                                "no match",
-                                                                                "C. kamaaina",
-                                                                                "Rhabditis terricola",
-                                                                                "Rhanditis tericola",
-                                                                                "Teratorhabditis sp.",
-                                                                                "Unknown",
-                                                                                "unknown",
-                                                                                "Oscheius sp.",
-                                                                                "Panagrolaimus sp.",
-                                                                                "-",
-                                                                                NA),
-                                                              "Other PCR +", species_id)))))) %>%
+                                                 ifelse(worms_on_sample == "Yes" & ITS2_pcr_product == 0, "PCR -", species_id))))) %>%
   dplyr::select(isolation_id, collection_id, collection_type, collection_island, species_id, ITS2_pcr_product, worms_on_sample, collection_longitude, collection_latitude) %>%
   dplyr::filter(collection_type != "Tracks only", collection_type != "No Nematode") %>%
   dplyr::distinct(collection_id, isolation_id, .keep_all=T) %>% 
@@ -429,12 +412,19 @@ isolation_counts3 <- fulcrum_dat %>%
   dplyr::rename(`isolation report` = collection_type,
                 value = n)
  
+`Possible new Caenorhabditis sp. isolations` <- fulcrum_dat %>%
+  dplyr::filter(possible_new_species == 1) %>%
+  dplyr::mutate(n = n()) %>%
+  dplyr::distinct(n) %>%
+  dplyr::pull(unique(n))
+  
 # add it all together
 isolation_report <- tibble(`total number of distinct isolations`,
                           `total number of distinct isolations NAs removed`,
                           `average isolations per collection with worms`,
                           `isolations with duplicated ids`,
-                          `isolations without paired collection data`) %>%
+                          `isolations without paired collection data`,
+                          `Possible new Caenorhabditis sp. isolations`) %>%
    tidyr::gather(`isolation report`, value) %>%
   dplyr::full_join(isolation_counts3 %>% dplyr::mutate(value = as.character(value)))
 
@@ -562,7 +552,9 @@ knitr::kable(`duplication in genotyping sheet`, caption = glue::glue("{n_duplica
 ```
 <br> These dataframes are filtered to show the duplications in the raw data from fulcrum or the genotyping sheet. If the dataframe are empty there is no duplication.<br>
 **Duplication issue 1:** Duplication in feild sampling comes from collection_id C-0871.<br>
-**Possible Solution:** Remove Gaotian's instance of C-0871 after extracting GPS location for other Kalopa collections.<br>
+**Solution:** Remove Gaotian's instance of C-0871 after extracting collection data from it and applying these data to all<br>
+collections that contained the `Location at 871` flag in the `substrate_notes` column. See lines 503-523 in<br>
+process_fulcrum_data.R script.<br>
 **Duplication issue 2:** Duplicated isolation record for S-11690.<br> 
 **Solution:** The extra S-11690 record was removed in Step 5 of process_fulcrum_data.R script.<br>
 
@@ -778,8 +770,7 @@ target_map <-  map_target_species(target_df %>% dplyr::mutate(color = case_when(
 target_map
 ```
 
-### Concerns as of 20200108
+### Concerns as of 20200113
 **1.** One collection (C-0882) has a c-label (C-0882) rather than an s-label for isolation_id.<br>
 **2.** One s-label is S-XXXXX? Could this resolve concern 1?<br>
-**3.** Collections with lat,long in Volcano need to be manually corrected to Kalopa. Gaotian and Clay will address.<br>
-This should also resolve the duplicated collection_id (C-0871).<br>
+**3.** Possible new caeno species isolations need to be confirmed.

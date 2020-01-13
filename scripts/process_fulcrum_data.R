@@ -432,7 +432,7 @@ genotyping_sheet <- genotyping_sheet_raw %>%
 # Remove any duplicated s_labels. We removed duplicated s_labels in genotyping sheet (S-0374, S-0382, S-0381).
 
 # Join genotyping sheet with collection and isolation data
-fulcrum_dat <- df4 %>% 
+df5 <- df4 %>% 
   dplyr::full_join(genotyping_sheet) %>%
   # Rename variables
   dplyr::rename(project_id = project,
@@ -440,6 +440,12 @@ fulcrum_dat <- df4 %>%
                 isolation_id = s_label) %>%
   # Fill project_id variable incase there are NAs introduced
   tidyr::fill(project_id) %>%
+  # make column for possible new species
+  dplyr::mutate(possible_new_species = ifelse(manual_blast_notes %in% c("new species?",
+                                                                        "New species?",
+                                                                        "Might be new species",
+                                                                        "Might be new Caeno species!",
+                                                                        "Might be new species!"), 1, 0)) %>%
   # Reorder variables
   dplyr::select(project_id,
                 collection_id,
@@ -491,29 +497,43 @@ fulcrum_dat <- df4 %>%
                 ITS2_pcr_product,
                 rhabditid_pcr_product,
                 manual_blast_notes, 
-                notes)
+                notes,
+                possible_new_species)
+
+###################################################################
+### 12: OPTIONAL: Correct collections processed in Volcano      ###
+###################################################################
+
+#extract c_labels that need to be corrected for this trip
+need_corrections <- df5 %>%
+  dplyr::filter(substrate_notes == "Location at 871") %>%
+  dplyr::select(-(collection_datetime_UTC:ambient_humidity), -(fulcrum_altitude:sky_view))
+
+#extract collection info from gaotian's C-0871 collection at Kalopa
+collection_data_871 <- df5 %>%
+  dplyr::filter(collection_id == "C-0871", collection_by == "gaotian52@gmail.com") %>%
+  dplyr::select(collection_datetime_UTC:ambient_humidity, fulcrum_altitude:sky_view) %>%
+  dplyr::slice(rep(1:n(), each = nrow(need_corrections)))
+
+# bind collection data from C-0871 with collections that need corrections
+corrected_collections <- bind_cols(need_corrections, collection_data_871) %>%
+  dplyr::mutate(substrate_notes = "substrate temperature not measured because collections were processed in Volcano one day after collection in Kalopa")
+  
+# join corrected_collections back into processed dataframe
+fulcrum_dat <- df5 %>%
+  dplyr::filter(!(collection_id %in% need_corrections$collection_id)) %>%
+  dplyr::full_join(corrected_collections)
+
+###################################################################
+### 13: Export processed data                                   ###
+###################################################################
 
 # export R dataframe
 save(file = "data/fulcrum/fulcrum_dat.Rda", fulcrum_dat)
 
-
 ###################################################################
-### 12: project specific report                                 ###
+### 13: project specific report                                 ###
 ###################################################################
 
-######################
-### Issue 1        ###
-######################
-# pull out s_labels with C_label NA (there are 12 s_labels that are not joining properly. Three case types
-# Case 1: (8 instances) of s_lable in genotyping sheet, but not in `nematode_isolation_s_labeled_plates.csv`
-# Case 2: (2 instances) s_lable is present in genotyping sheet and `nematode_isolation_s_labeled_plates.csv`, but paired with different c_label in genoptyping sheet.
-# Case 3: (2 instances) s_lable is present in genotyping sheet and `nematode_isolation_s_labeled_plates.csv`, but c_label is NA in genoptyping sheet.
-# Solution for case 2 & 3 is to remove c_label column before joining. DONE!
-# Solution for case 1. Manually check?
-#####################
-### Issue 2       ###
-#####################
-# S-0298 is duplicated in neamtode_isolation_S_labeled_plates.csv
-# removed the duplkicate in step 5 joining c_labels with s_lables.
 
 
