@@ -523,14 +523,30 @@ isolation_counts3 <- fulcrum_dat %>%
   dplyr::mutate(n = n()) %>%
   dplyr::distinct(n) %>%
   dplyr::pull(unique(n))
-  
+
+`Isolations that need to be resequenced` <- fulcrum_dat %>%
+  dplyr::filter(ITS2_pcr_product == 1) %>%
+  dplyr::filter(manual_blast_notes %in% c("Needs to be redone",
+"no significant match; redo",
+"short sequence region, though. redo?",
+"only ~55% of the query matched, so maybe redo?",
+"a few mismatches, redo?",                               
+"only ~62% of the query matched, so maybe redo?", 
+"Not high identity",       
+"redo",                                                                                        
+"But sequence may be bad") | (is.na(species_id)) | species_id %in% c("No significance", "No signficance", "No amplification", "uncultured soil fungus")) %>%
+  dplyr::mutate(n = n()) %>%
+  dplyr::distinct(n) %>%
+  dplyr::pull(unique(n))
+
 # add it all together
 isolation_report <- tibble(`total number of distinct isolations`,
                           `total number of distinct isolations NAs removed`,
                           `average isolations per collection with worms`,
                           `isolations with duplicated ids`,
                           `isolations without paired collection data`,
-                          `Possible new Caenorhabditis sp. isolations`) %>%
+                          `Possible new Caenorhabditis sp. isolations`,
+                          `Isolations that need to be resequenced`) %>%
    tidyr::gather(`isolation report`, value) %>%
   dplyr::full_join(isolation_counts3 %>% dplyr::mutate(value = as.character(value)))
 
@@ -849,7 +865,8 @@ ns_map
 
 ```
 
-### Concerns as of 20200113
+### Concerns as of 20200119
 **1.** One collection (C-0882) has a c-label (C-0882) rather than an s-label for isolation_id.<br>
 **2.** One s-label is S-XXXXX? Could this resolve concern 1?<br>
-**3.** Possible new caeno species isolations need to be confirmed.
+**3.** Possible new caeno species isolations need to be confirmed.<br>
+**4.** There are 28 isolations that have notes suggesting they need to be resequenced. These include all isolations with notes mentioning redos, ITS2 positive without species_ids, or species_ids as "No significance", "No amplification", or "unclutured soil fungus". 
