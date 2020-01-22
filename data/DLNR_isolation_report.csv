@@ -1,0 +1,413 @@
+species_id,collection_id,isolation_id,substrate,collection_island,collection_trail,collection_longitude,collection_latitude
+C. briggsae,C-1963,S-10900,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648922,22.135003
+C. briggsae,C-1296,S-10920,Leaf litter,Oahu,Aiea Loop Trail,-157.890222,21.403414
+C. briggsae,C-1328,S-10385,Fungus,Oahu,Aiea Loop Trail,-157.886822,21.401228
+C. briggsae,C-1328,S-10521,Fungus,Oahu,Aiea Loop Trail,-157.886822,21.401228
+C. briggsae,C-1328,S-10620,Fungus,Oahu,Aiea Loop Trail,-157.886822,21.401228
+C. briggsae,C-1328,S-10517,Fungus,Oahu,Aiea Loop Trail,-157.886822,21.401228
+C. briggsae,C-1328,S-10522,Fungus,Oahu,Aiea Loop Trail,-157.886822,21.401228
+C. briggsae,C-1124,S-10434,Fungus,Oahu,Aiea Loop Trail,-157.899497,21.399
+C. briggsae,C-1124,S-10432,Fungus,Oahu,Aiea Loop Trail,-157.899497,21.399
+C. briggsae,C-1124,S-10290,Fungus,Oahu,Aiea Loop Trail,-157.899497,21.399
+C. briggsae,C-1124,S-10280,Fungus,Oahu,Aiea Loop Trail,-157.899497,21.399
+C. briggsae,C-1124,S-10279,Fungus,Oahu,Aiea Loop Trail,-157.899497,21.399
+C. briggsae,C-0632,S-10640,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0632,S-10722,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0632,S-10635,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0632,S-10639,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0632,S-10641,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0632,S-10636,Leaf litter,Oahu,Aiea Loop Trail,-157.900661,21.395875
+C. briggsae,C-0631,S-10667,Leaf litter,Oahu,Aiea Loop Trail,-157.900511,21.395786
+C. briggsae,C-0631,S-10668,Leaf litter,Oahu,Aiea Loop Trail,-157.900511,21.395786
+C. briggsae,C-0631,S-10664,Leaf litter,Oahu,Aiea Loop Trail,-157.900511,21.395786
+C. briggsae,C-0631,S-10673,Leaf litter,Oahu,Aiea Loop Trail,-157.900511,21.395786
+C. briggsae,C-0609,S-10270,Leaf litter,Oahu,Aiea Loop Trail,-157.900994,21.395675
+C. briggsae,C-0609,S-10283,Leaf litter,Oahu,Aiea Loop Trail,-157.900994,21.395675
+C. briggsae,C-0609,S-10285,Leaf litter,Oahu,Aiea Loop Trail,-157.900994,21.395675
+C. briggsae,C-0609,S-10291,Leaf litter,Oahu,Aiea Loop Trail,-157.900994,21.395675
+C. briggsae,C-0609,S-10319,Leaf litter,Oahu,Aiea Loop Trail,-157.900994,21.395675
+C. briggsae,C-1030,S-10211,Fruit,Oahu,Aiea Loop Trail,-157.90104,21.395558
+C. briggsae,C-1030,S-10314,Fruit,Oahu,Aiea Loop Trail,-157.90104,21.395558
+C. briggsae,C-1030,S-10209,Fruit,Oahu,Aiea Loop Trail,-157.90104,21.395558
+C. briggsae,C-1030,S-10278,Fruit,Oahu,Aiea Loop Trail,-157.90104,21.395558
+C. briggsae,C-1030,S-10206,Fruit,Oahu,Aiea Loop Trail,-157.90104,21.395558
+C. briggsae,C-0628,S-10648,Leaf litter,Oahu,Aiea Loop Trail,-157.900228,21.394489
+C. briggsae,C-0628,S-10680,Leaf litter,Oahu,Aiea Loop Trail,-157.900228,21.394489
+C. briggsae,C-0623,S-10602,Flower,Oahu,Aiea Loop Trail,-157.902356,21.392064
+C. briggsae,C-1220,S-10818,Fruit,Oahu,"NA",-157.822506,21.329528
+C. briggsae,C-1220,S-10819,Fruit,Oahu,"NA",-157.822506,21.329528
+C. briggsae,C-1220,S-10843,Fruit,Oahu,"NA",-157.822506,21.329528
+C. briggsae,C-1219,S-10844,Fruit,Oahu,"NA",-157.822486,21.329511
+C. briggsae,C-1140,S-10718,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1140,S-10505,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1140,S-10719,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1140,S-10726,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1140,S-10720,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1140,S-10725,Nut,Oahu,"NA",-157.822194,21.329439
+C. briggsae,C-1222,S-10610,Fruit,Oahu,"NA",-157.822956,21.328939
+C. briggsae,C-1227,S-10583,Fruit,Oahu,"NA",-157.823006,21.328925
+C. briggsae,C-1276,S-10408,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1276,S-10503,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1276,S-10490,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1276,S-10496,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1276,S-10492,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1276,S-10485,Fruit,Oahu,Ualaka`a Trail,-157.819772,21.320797
+C. briggsae,C-1273,S-10711,Fruit,Oahu,Ualaka`a Trail,-157.819747,21.320522
+C. briggsae,C-1270,S-10682,Fruit,Oahu,Ualaka`a Trail,-157.818644,21.3184
+C. briggsae,C-1270,S-10684,Fruit,Oahu,Ualaka`a Trail,-157.818644,21.3184
+C. briggsae,C-1270,S-10685,Fruit,Oahu,Ualaka`a Trail,-157.818644,21.3184
+C. briggsae,C-1270,S-10686,Fruit,Oahu,Ualaka`a Trail,-157.818644,21.3184
+C. briggsae,C-1270,S-10687,Fruit,Oahu,Ualaka`a Trail,-157.818644,21.3184
+C. briggsae,C-1284,S-10699,Fruit,Oahu,Ualaka`a Trail,-157.819739,21.318231
+C. briggsae,C-1290,S-10759,Leaf litter,Oahu,Ualaka`a Trail,-157.818575,21.317486
+C. briggsae,C-1290,S-10754,Leaf litter,Oahu,Ualaka`a Trail,-157.818575,21.317486
+C. briggsae,C-1290,S-10755,Leaf litter,Oahu,Ualaka`a Trail,-157.818575,21.317486
+C. briggsae,C-1290,S-10757,Leaf litter,Oahu,Ualaka`a Trail,-157.818575,21.317486
+C. briggsae,C-1290,S-10758,Leaf litter,Oahu,Ualaka`a Trail,-157.818575,21.317486
+C. briggsae,C-0614,S-10417,Leaf litter,Oahu,Ualaka`a Trail,-157.819756,21.317117
+C. briggsae,C-1350,S-10326,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.761719,21.311842
+C. briggsae,C-1143,S-10284,Leaf litter,Oahu,Wa'ahila Ridge Trail,-157.794919,21.310911
+C. briggsae,C-1143,S-10261,Leaf litter,Oahu,Wa'ahila Ridge Trail,-157.794919,21.310911
+C. briggsae,C-1162,S-10633,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795597,21.308944
+C. briggsae,C-1555,S-10337,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1555,S-10330,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1555,S-10493,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1555,S-10494,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1555,S-10495,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1555,S-10500,Fruit,Oahu,Wa'ahila Ridge Trail,-157.795643,21.308741
+C. briggsae,C-1160,S-10474,Fruit,Oahu,Wa'ahila Ridge Trail,-157.796636,21.307381
+C. briggsae,C-1160,S-10581,Fruit,Oahu,Wa'ahila Ridge Trail,-157.796636,21.307381
+C. briggsae,C-1149,S-10812,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762581,21.301669
+C. briggsae,C-1149,S-10813,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762581,21.301669
+C. briggsae,C-1149,S-10778,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762581,21.301669
+C. briggsae,C-1149,S-10780,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762581,21.301669
+C. briggsae,C-1148,S-10707,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762644,21.300119
+C. briggsae,C-1148,S-10708,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762644,21.300119
+C. briggsae,C-1148,S-10710,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762644,21.300119
+C. briggsae,C-1148,S-10709,Leaf litter,Oahu,Wiliwilinui Ridge Trail,-157.762644,21.300119
+C. briggsae,C-0920,S-11342,Fruit,Maui,Waihe'e Ridge Trail,-156.533173,20.952098
+C. briggsae,C-0920,S-11145,Fruit,Maui,Waihe'e Ridge Trail,-156.533173,20.952098
+C. briggsae,C-0920,S-11147,Fruit,Maui,Waihe'e Ridge Trail,-156.533173,20.952098
+C. briggsae,C-0920,S-11148,Fruit,Maui,Waihe'e Ridge Trail,-156.533173,20.952098
+C. briggsae,C-0948,S-11484,Fruit,Maui,Waihe'e Ridge Trail,-156.536365,20.949184
+C. briggsae,C-0948,S-11485,Fruit,Maui,Waihe'e Ridge Trail,-156.536365,20.949184
+C. briggsae,C-0948,S-11486,Fruit,Maui,Waihe'e Ridge Trail,-156.536365,20.949184
+C. briggsae,C-0948,S-11487,Fruit,Maui,Waihe'e Ridge Trail,-156.536365,20.949184
+C. briggsae,C-0948,S-11488,Fruit,Maui,Waihe'e Ridge Trail,-156.536365,20.949184
+C. briggsae,C-0929,S-11245,Nut,Maui,Waihe'e Ridge Trail,-156.53565,20.948832
+C. briggsae,C-0929,S-11239,Nut,Maui,Waihe'e Ridge Trail,-156.53565,20.948832
+C. briggsae,C-0961,S-11794,Leaf litter,Maui,Waihe'e Ridge Trail,-156.536535,20.948692
+C. briggsae,C-0961,S-11796,Leaf litter,Maui,Waihe'e Ridge Trail,-156.536535,20.948692
+C. briggsae,C-0961,S-11797,Leaf litter,Maui,Waihe'e Ridge Trail,-156.536535,20.948692
+C. briggsae,C-0932,S-11197,Fruit,Maui,Waihe'e Ridge Trail,-156.536053,20.948473
+C. briggsae,C-1540,S-11391,Fruit,Maui,"NA",-156.280882,20.83708
+C. briggsae,C-1540,S-11387,Fruit,Maui,"NA",-156.280882,20.83708
+C. briggsae,C-1540,S-11386,Fruit,Maui,"NA",-156.280882,20.83708
+C. briggsae,C-1567,S-11633,Fruit,Maui,"NA",-156.280878,20.837072
+C. briggsae,C-1567,S-11637,Fruit,Maui,"NA",-156.280878,20.837072
+C. briggsae,C-1567,S-11635,Fruit,Maui,"NA",-156.280878,20.837072
+C. briggsae,C-1521,S-11279,Fruit,Maui,"NA",-156.280851,20.837058
+C. briggsae,C-1521,S-11280,Fruit,Maui,"NA",-156.280851,20.837058
+C. briggsae,C-1569,S-11903,Fruit,Maui,"NA",-156.280857,20.837057
+C. briggsae,C-1533,S-11727,Fruit,Maui,"NA",-156.280879,20.837056
+C. briggsae,C-1533,S-11728,Fruit,Maui,"NA",-156.280879,20.837056
+C. briggsae,C-1533,S-11732,Fruit,Maui,"NA",-156.280879,20.837056
+C. briggsae,C-1533,S-11730,Fruit,Maui,"NA",-156.280879,20.837056
+C. briggsae,C-1181,S-12674,Leaf litter,Big Island,Kalopa State Recreation Area,-155.443561,20.041347
+C. briggsae,C-0885,S-12280,Fruit,Big Island,Kalopa State Recreation Area,-155.440011,20.038736
+C. briggsae,C-0792,S-12215,Fruit,Big Island,Manuka Nature Trail,-155.820397,19.120342
+C. briggsae,C-0792,S-12216,Fruit,Big Island,Manuka Nature Trail,-155.820397,19.120342
+C. briggsae,C-0792,S-12217,Fruit,Big Island,Manuka Nature Trail,-155.820397,19.120342
+C. briggsae,C-0792,S-12218,Fruit,Big Island,Manuka Nature Trail,-155.820397,19.120342
+C. briggsae,C-0792,S-12220,Fruit,Big Island,Manuka Nature Trail,-155.820397,19.120342
+C. briggsae,C-0791,S-12327,Fruit,Big Island,Manuka Nature Trail,-155.820694,19.120247
+C. briggsae,C-0791,S-12328,Fruit,Big Island,Manuka Nature Trail,-155.820694,19.120247
+C. briggsae,C-0791,S-12653,Fruit,Big Island,Manuka Nature Trail,-155.820694,19.120247
+C. briggsae,C-0791,S-12648,Fruit,Big Island,Manuka Nature Trail,-155.820694,19.120247
+C. briggsae,C-0791,S-12646,Fruit,Big Island,Manuka Nature Trail,-155.820694,19.120247
+C. briggsae,C-0745,S-12464,Flower,Big Island,Manuka Nature Trail,-155.826394,19.110611
+C. briggsae,C-0745,S-12440,Flower,Big Island,Manuka Nature Trail,-155.826394,19.110611
+C. briggsae,C-0745,S-12438,Flower,Big Island,Manuka Nature Trail,-155.826394,19.110611
+C. briggsae,C-0745,S-12463,Flower,Big Island,Manuka Nature Trail,-155.826394,19.110611
+C. briggsae,C-0750,S-11988,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. briggsae,C-0750,S-11989,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. briggsae,C-0750,S-11990,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. briggsae,C-0750,S-11991,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. briggsae,C-0750,S-11992,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. briggsae,C-0750,S-11993,Flower,Big Island,Manuka Nature Trail,-155.826447,19.110589
+C. elegans,C-1946,S-11176,Fruit,Kauai,Awa'awapuhi Trail,-159.667897,22.149703
+C. elegans,C-1946,S-11212,Fruit,Kauai,Awa'awapuhi Trail,-159.667897,22.149703
+C. elegans,C-1946,S-11213,Fruit,Kauai,Awa'awapuhi Trail,-159.667897,22.149703
+C. elegans,C-1946,S-11214,Fruit,Kauai,Awa'awapuhi Trail,-159.667897,22.149703
+C. elegans,C-1946,S-11215,Fruit,Kauai,Awa'awapuhi Trail,-159.667897,22.149703
+C. elegans,C-1962,S-10893,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1962,S-10894,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1962,S-10895,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1962,S-10896,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1962,S-10897,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1962,S-10898,Leaf litter,Kauai,Awa'awapuhi Trail,-159.666492,22.149092
+C. elegans,C-1113,S-10888,Fruit,Kauai,Awa'awapuhi Trail,-159.662031,22.147283
+C. elegans,C-1091,S-10993,Leaf litter,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1091,S-10994,Leaf litter,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1091,S-10995,Leaf litter,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1091,S-10996,Leaf litter,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1093,S-11129,Fruit,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1093,S-11130,Fruit,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1093,S-11128,Fruit,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1093,S-11127,Fruit,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1093,S-11126,Fruit,Kauai,Awa'awapuhi Trail,-159.663406,22.146997
+C. elegans,C-1377,S-11179,Leaf litter,Kauai,Awa'awapuhi Trail,-159.661372,22.146558
+C. elegans,C-1377,S-11180,Leaf litter,Kauai,Awa'awapuhi Trail,-159.661372,22.146558
+C. elegans,C-1377,S-11181,Leaf litter,Kauai,Awa'awapuhi Trail,-159.661372,22.146558
+C. elegans,C-1377,S-11182,Leaf litter,Kauai,Awa'awapuhi Trail,-159.661372,22.146558
+C. elegans,C-1377,S-11183,Leaf litter,Kauai,Awa'awapuhi Trail,-159.661372,22.146558
+C. elegans,C-1394,S-11228,Flower,Kauai,Awa'awapuhi Trail,-159.655367,22.143803
+C. elegans,C-1394,S-11230,Flower,Kauai,Awa'awapuhi Trail,-159.655367,22.143803
+C. elegans,C-1394,S-11231,Flower,Kauai,Awa'awapuhi Trail,-159.655367,22.143803
+C. elegans,C-1394,S-11232,Flower,Kauai,Awa'awapuhi Trail,-159.655367,22.143803
+C. elegans,C-1394,S-11095,Flower,Kauai,Awa'awapuhi Trail,-159.655367,22.143803
+C. elegans,C-1099,S-11012,Leaf litter,Kauai,Awa'awapuhi Trail,-159.652867,22.142139
+C. elegans,C-1099,S-11015,Leaf litter,Kauai,Awa'awapuhi Trail,-159.652867,22.142139
+C. elegans,C-1099,S-11016,Leaf litter,Kauai,Awa'awapuhi Trail,-159.652867,22.142139
+C. elegans,C-1401,S-11500,Fruit,Kauai,Awa'awapuhi Trail,-159.648914,22.141197
+C. elegans,C-1401,S-11501,Fruit,Kauai,Awa'awapuhi Trail,-159.648914,22.141197
+C. elegans,C-1401,S-11502,Fruit,Kauai,Awa'awapuhi Trail,-159.648914,22.141197
+C. elegans,C-1401,S-11503,Fruit,Kauai,Awa'awapuhi Trail,-159.648914,22.141197
+C. elegans,C-1401,S-11504,Fruit,Kauai,Awa'awapuhi Trail,-159.648914,22.141197
+C. elegans,C-1972,S-11072,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1972,S-11073,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1972,S-11074,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1972,S-10856,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1972,S-10857,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1972,S-10858,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.647806,22.135492
+C. elegans,C-1981,S-10871,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648075,22.135483
+C. elegans,C-1981,S-11035,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648075,22.135483
+C. elegans,C-1981,S-10784,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648075,22.135483
+C. elegans,C-1981,S-10785,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648075,22.135483
+C. elegans,C-1981,S-10872,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648075,22.135483
+C. elegans,C-1969,S-10827,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648294,22.135358
+C. elegans,C-1969,S-10828,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648294,22.135358
+C. elegans,C-1969,S-10829,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648294,22.135358
+C. elegans,C-1970,S-10966,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648311,22.135344
+C. elegans,C-1964,S-10997,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648969,22.135156
+C. elegans,C-1967,S-10863,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648306,22.135125
+C. elegans,C-1967,S-10862,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648306,22.135125
+C. elegans,C-1967,S-10866,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648306,22.135125
+C. elegans,C-1967,S-10865,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.648306,22.135125
+C. elegans,C-0683,S-11372,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649164,22.134886
+C. elegans,C-0683,S-11375,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649164,22.134886
+C. elegans,C-0683,S-11373,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649164,22.134886
+C. elegans,C-0683,S-11374,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649164,22.134886
+C. elegans,C-1985,S-10802,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.64945,22.134589
+C. elegans,C-1985,S-10807,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.64945,22.134589
+C. elegans,C-0681,S-11690,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649456,22.134589
+C. elegans,C-0681,S-11692,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649456,22.134589
+C. elegans,C-0681,S-11694,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649456,22.134589
+C. elegans,C-0681,S-11689,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649456,22.134589
+C. elegans,C-1986,S-11037,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649756,22.134192
+C. elegans,C-0677,S-11898,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650044,22.134169
+C. elegans,C-0677,S-11905,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650044,22.134169
+C. elegans,C-0678,S-11298,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.649839,22.134164
+C. elegans,C-0675,S-11539,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650331,22.134086
+C. elegans,C-0675,S-11541,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650331,22.134086
+C. elegans,C-0673,S-11783,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650544,22.133714
+C. elegans,C-0673,S-11782,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650544,22.133714
+C. elegans,C-0673,S-11781,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650544,22.133714
+C. elegans,C-0673,S-11780,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650544,22.133714
+C. elegans,C-0673,S-11779,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.650544,22.133714
+C. elegans,C-0670,S-11549,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651092,22.133356
+C. elegans,C-0670,S-11536,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651092,22.133356
+C. elegans,C-0669,S-11337,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651264,22.133228
+C. elegans,C-0669,S-11338,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651264,22.133228
+C. elegans,C-0669,S-11339,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651264,22.133228
+C. elegans,C-0669,S-11340,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651264,22.133228
+C. elegans,C-0669,S-11461,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651264,22.133228
+C. elegans,C-0657,S-11418,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651389,22.133106
+C. elegans,C-0668,S-11509,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651531,22.132961
+C. elegans,C-0668,S-11510,Fruit,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651531,22.132961
+C. elegans,C-0635,S-11377,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651728,22.132297
+C. elegans,C-0635,S-11414,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651728,22.132297
+C. elegans,C-0635,S-11415,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651728,22.132297
+C. elegans,C-0635,S-11416,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651728,22.132297
+C. elegans,C-0635,S-11417,Leaf litter,Kauai,Pu'u Ka Ohelo Berry Flat Trail,-159.651728,22.132297
+C. elegans,C-1216,S-10775,Flower,Oahu,"NA",-157.822772,21.329164
+C. elegans,C-1216,S-10776,Flower,Oahu,"NA",-157.822772,21.329164
+C. elegans,C-1216,S-10773,Flower,Oahu,"NA",-157.822772,21.329164
+C. elegans,C-1034,S-10412,Fruit,Oahu,Wiliwilinui Ridge Trail,-157.761807,21.311768
+C. elegans,C-1034,S-10318,Fruit,Oahu,Wiliwilinui Ridge Trail,-157.761807,21.311768
+C. elegans,C-1034,S-10316,Fruit,Oahu,Wiliwilinui Ridge Trail,-157.761807,21.311768
+C. elegans,C-1034,S-10236,Fruit,Oahu,Wiliwilinui Ridge Trail,-157.761807,21.311768
+C. elegans,C-1575,S-11877,Fruit,Maui,"NA",-156.280914,20.837084
+C. elegans,C-1569,S-11901,Fruit,Maui,"NA",-156.280857,20.837057
+C. elegans,C-1569,S-11894,Fruit,Maui,"NA",-156.280857,20.837057
+C. elegans,C-1569,S-11904,Fruit,Maui,"NA",-156.280857,20.837057
+C. elegans,C-1569,S-11895,Fruit,Maui,"NA",-156.280857,20.837057
+C. elegans,C-1533,S-11731,Fruit,Maui,"NA",-156.280879,20.837056
+C. elegans,C-1571,S-11900,Fruit,Maui,"NA",-156.280906,20.837038
+C. elegans,C-1573,S-11854,Fruit,Maui,Kahakapao Loop Trail,-156.278045,20.830426
+C. elegans,C-0537,S-10770,Leaf litter,Maui,Kahakapao Loop Trail,-156.276037,20.827135
+C. elegans,C-0537,S-10769,Leaf litter,Maui,Kahakapao Loop Trail,-156.276037,20.827135
+C. elegans,C-0537,S-10768,Leaf litter,Maui,Kahakapao Loop Trail,-156.276037,20.827135
+C. elegans,C-0537,S-10766,Leaf litter,Maui,Kahakapao Loop Trail,-156.276037,20.827135
+C. elegans,C-0914,S-11517,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0914,S-11518,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0914,S-11519,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0914,S-11191,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0914,S-11192,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0914,S-11193,Fruit,Maui,Kahakapao Loop Trail,-156.277209,20.826934
+C. elegans,C-0913,S-11240,Fruit,Maui,Kahakapao Loop Trail,-156.277237,20.82693
+C. elegans,C-0913,S-11237,Fruit,Maui,Kahakapao Loop Trail,-156.277237,20.82693
+C. elegans,C-0913,S-11235,Fruit,Maui,Kahakapao Loop Trail,-156.277237,20.82693
+C. elegans,C-0913,S-11234,Fruit,Maui,Kahakapao Loop Trail,-156.277237,20.82693
+C. elegans,C-1529,S-11526,Fruit,Maui,Kahakapao Loop Trail,-156.279018,20.826718
+C. elegans,C-1529,S-11523,Fruit,Maui,Kahakapao Loop Trail,-156.279018,20.826718
+C. elegans,C-1529,S-11524,Fruit,Maui,Kahakapao Loop Trail,-156.279018,20.826718
+C. elegans,C-1529,S-11522,Fruit,Maui,Kahakapao Loop Trail,-156.279018,20.826718
+C. elegans,C-0905,S-11842,Fruit,Maui,Kahakapao Loop Trail,-156.277068,20.826691
+C. elegans,C-0905,S-11839,Fruit,Maui,Kahakapao Loop Trail,-156.277068,20.826691
+C. elegans,C-0905,S-11838,Fruit,Maui,Kahakapao Loop Trail,-156.277068,20.826691
+C. elegans,C-0905,S-11837,Fruit,Maui,Kahakapao Loop Trail,-156.277068,20.826691
+C. elegans,C-1531,S-11568,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1531,S-11569,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1531,S-11570,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1531,S-11571,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1531,S-11572,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1531,S-11573,Fruit,Maui,Kahakapao Loop Trail,-156.276841,20.82662
+C. elegans,C-1532,S-11309,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-1532,S-11310,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-1532,S-11311,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-1532,S-11312,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-1532,S-11313,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-1532,S-11314,Fruit,Maui,Kahakapao Loop Trail,-156.276901,20.826612
+C. elegans,C-0901,S-11288,Fruit,Maui,Kahakapao Loop Trail,-156.277041,20.826518
+C. elegans,C-0901,S-11287,Fruit,Maui,Kahakapao Loop Trail,-156.277041,20.826518
+C. elegans,C-0901,S-11286,Fruit,Maui,Kahakapao Loop Trail,-156.277041,20.826518
+C. elegans,C-0896,S-11867,Fruit,Maui,Kahakapao Loop Trail,-156.277023,20.826474
+C. elegans,C-0896,S-11868,Fruit,Maui,Kahakapao Loop Trail,-156.277023,20.826474
+C. elegans,C-0896,S-11869,Fruit,Maui,Kahakapao Loop Trail,-156.277023,20.826474
+C. elegans,C-0896,S-11870,Fruit,Maui,Kahakapao Loop Trail,-156.277023,20.826474
+C. elegans,C-0896,S-11871,Fruit,Maui,Kahakapao Loop Trail,-156.277023,20.826474
+C. elegans,C-1525,S-11255,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-1525,S-11256,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-1525,S-11257,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-1525,S-11258,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-1525,S-11259,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-1525,S-11260,Fruit,Maui,Kahakapao Loop Trail,-156.277366,20.826071
+C. elegans,C-0826,S-11445,Leaf litter,Maui,Kahakapao Loop Trail,-156.269582,20.813036
+C. elegans,C-1580,S-11660,Flower,Maui,"NA",-156.311024,20.729436
+C. elegans,C-1580,S-11675,Flower,Maui,"NA",-156.311024,20.729436
+C. elegans,C-1580,S-11659,Flower,Maui,"NA",-156.311024,20.729436
+C. elegans,C-1580,S-11658,Flower,Maui,"NA",-156.311024,20.729436
+C. elegans,C-1580,S-11657,Flower,Maui,"NA",-156.311024,20.729436
+C. elegans,C-1582,S-11582,Fruit,Maui,"NA",-156.307356,20.727403
+C. elegans,C-1582,S-11583,Fruit,Maui,"NA",-156.307356,20.727403
+C. elegans,C-1582,S-11584,Fruit,Maui,"NA",-156.307356,20.727403
+C. elegans,C-1582,S-11585,Fruit,Maui,"NA",-156.307356,20.727403
+C. elegans,C-1582,S-11586,Fruit,Maui,"NA",-156.307356,20.727403
+C. elegans,C-1586,S-11629,Flower,Maui,"NA",-156.304527,20.723333
+C. elegans,C-1586,S-11626,Flower,Maui,"NA",-156.304527,20.723333
+C. elegans,C-1586,S-11638,Flower,Maui,"NA",-156.304527,20.723333
+C. elegans,C-1858,S-11467,Soil,Maui,Haleakala Ridge Trail,-156.338687,20.675522
+C. elegans,C-1845,S-11761,Leaf litter,Maui,Haleakala Ridge Trail,-156.33692,20.670209
+C. elegans,C-1859,S-11474,Fungus,Maui,Haleakala Ridge Trail,-156.336243,20.670206
+C. elegans,C-1859,S-11475,Fungus,Maui,Haleakala Ridge Trail,-156.336243,20.670206
+C. elegans,C-1859,S-11477,Fungus,Maui,Haleakala Ridge Trail,-156.336243,20.670206
+C. elegans,C-1847,S-11767,Fungus,Maui,Haleakala Ridge Trail,-156.337429,20.669708
+C. elegans,C-1847,S-11769,Fungus,Maui,Haleakala Ridge Trail,-156.337429,20.669708
+C. elegans,C-1184,S-12588,Fruit,Big Island,Kalopa State Recreation Area,-155.443553,20.041372
+C. elegans,C-1184,S-12543,Fruit,Big Island,Kalopa State Recreation Area,-155.443553,20.041372
+C. elegans,C-1184,S-12592,Fruit,Big Island,Kalopa State Recreation Area,-155.443553,20.041372
+C. elegans,C-1184,S-12516,Fruit,Big Island,Kalopa State Recreation Area,-155.443553,20.041372
+C. elegans,C-1184,S-12528,Fruit,Big Island,Kalopa State Recreation Area,-155.443553,20.041372
+C. elegans,C-0885,S-12281,Fruit,Big Island,Kalopa State Recreation Area,-155.440011,20.038736
+C. elegans,C-0691,S-12134,Fruit,Big Island,Kalopa State Recreation Area,-155.438219,20.037553
+C. elegans,C-2028,S-12204,Leaf litter,Big Island,Kaloko Loop Trial,-155.947417,19.722264
+C. elegans,C-2025,S-12551,Fruit,Big Island,Kaloko Loop Trial,-155.947356,19.721806
+C. elegans,C-2025,S-12549,Fruit,Big Island,Kaloko Loop Trial,-155.947356,19.721806
+C. elegans,C-2025,S-12479,Fruit,Big Island,Kaloko Loop Trial,-155.947356,19.721806
+C. elegans,C-2019,S-12604,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2019,S-12710,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2019,S-12709,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2019,S-12700,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2019,S-12685,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2019,S-12686,Fruit,Big Island,Kaloko Loop Trial,-155.947339,19.721789
+C. elegans,C-2018,S-12238,Fruit,Big Island,Kaloko Loop Trial,-155.94735,19.721786
+C. elegans,C-2018,S-12239,Fruit,Big Island,Kaloko Loop Trial,-155.94735,19.721786
+C. elegans,C-2018,S-12241,Fruit,Big Island,Kaloko Loop Trial,-155.94735,19.721786
+C. elegans,C-2018,S-12186,Fruit,Big Island,Kaloko Loop Trial,-155.94735,19.721786
+C. elegans,C-2018,S-12184,Fruit,Big Island,Kaloko Loop Trial,-155.94735,19.721786
+C. elegans,C-0748,S-12060,Fruit,Big Island,Kaloko Loop Trial,-155.948711,19.720117
+C. elegans,C-0748,S-12055,Fruit,Big Island,Kaloko Loop Trial,-155.948711,19.720117
+C. elegans,C-0748,S-12056,Fruit,Big Island,Kaloko Loop Trial,-155.948711,19.720117
+C. elegans,C-0747,S-12297,Fruit,Big Island,Kaloko Loop Trial,-155.948731,19.720094
+C. elegans,C-0636,S-12088,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0636,S-12089,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0636,S-12090,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0636,S-12161,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0636,S-12162,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0636,S-12163,Fruit,Big Island,Kaloko Loop Trial,-155.948739,19.720081
+C. elegans,C-0643,S-12169,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0643,S-12170,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0643,S-12171,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0643,S-12172,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0643,S-12314,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0643,S-12315,Flower,Big Island,Kaloko Loop Trial,-155.948397,19.720022
+C. elegans,C-0656,S-12049,Flower,Big Island,Kaloko Loop Trial,-155.948167,19.719961
+C. elegans,C-0656,S-12051,Flower,Big Island,Kaloko Loop Trial,-155.948167,19.719961
+C. elegans,C-0656,S-12054,Flower,Big Island,Kaloko Loop Trial,-155.948167,19.719961
+C. elegans,C-0656,S-12052,Flower,Big Island,Kaloko Loop Trial,-155.948167,19.719961
+C. elegans,C-0656,S-12050,Flower,Big Island,Kaloko Loop Trial,-155.948167,19.719961
+C. elegans,C-0746,S-12285,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719953
+C. elegans,C-0746,S-12286,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719953
+C. elegans,C-0746,S-12287,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719953
+C. elegans,C-0746,S-12288,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719953
+C. elegans,C-0746,S-12289,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719953
+C. elegans,C-0739,S-12265,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0739,S-12266,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0739,S-12267,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0739,S-12270,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0739,S-12269,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0739,S-12268,Fruit,Big Island,Kaloko Loop Trial,-155.94863899999999,19.719706
+C. elegans,C-0743,S-11961,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719672
+C. elegans,C-0743,S-11962,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719672
+C. elegans,C-0743,S-11969,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719672
+C. elegans,C-0743,S-11970,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719672
+C. elegans,C-0743,S-11971,Fruit,Big Island,Kaloko Loop Trial,-155.948581,19.719672
+C. elegans,C-0734,S-11951,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0734,S-11952,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0734,S-11953,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0734,S-11954,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0734,S-11955,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0734,S-11956,Flower,Big Island,Kaloko Loop Trial,-155.948647,19.718619
+C. elegans,C-0795,S-11960,Fruit,Big Island,Manuka Nature Trail,-155.819644,19.120683
+C. elegans,C-0797,S-12544,Fruit,Big Island,Manuka Nature Trail,-155.819528,19.120458
+C. elegans,C-0796,S-12112,Fruit,Big Island,Manuka Nature Trail,-155.819558,19.120367
+C. elegans,C-0799,S-12104,Fruit,Big Island,Manuka Nature Trail,-155.819581,19.120128
+C. elegans,C-0799,S-12105,Fruit,Big Island,Manuka Nature Trail,-155.819581,19.120128
+C. elegans,C-0799,S-12106,Fruit,Big Island,Manuka Nature Trail,-155.819581,19.120128
+C. elegans,C-0799,S-12107,Fruit,Big Island,Manuka Nature Trail,-155.819581,19.120128
+C. elegans,C-0800,S-12097,Fruit,Big Island,Manuka Nature Trail,-155.819606,19.120025
+C. elegans,C-0800,S-12098,Fruit,Big Island,Manuka Nature Trail,-155.819606,19.120025
+C. elegans,C-0800,S-12099,Fruit,Big Island,Manuka Nature Trail,-155.819606,19.120025
+C. elegans,C-0800,S-12101,Fruit,Big Island,Manuka Nature Trail,-155.819606,19.120025
+C. elegans,C-0800,S-12102,Fruit,Big Island,Manuka Nature Trail,-155.819606,19.120025
+C. elegans,C-0801,S-12316,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-0801,S-12153,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-0801,S-12154,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-0801,S-12320,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-0801,S-12317,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-0801,S-12318,Fruit,Big Island,Manuka Nature Trail,-155.819614,19.119975
+C. elegans,C-1877,S-12457,Fruit,Big Island,Manuka Nature Trail,-155.820136,19.114675
+C. elegans,C-1877,S-12452,Fruit,Big Island,Manuka Nature Trail,-155.820136,19.114675
+C. elegans,C-1884,S-12213,Leaf litter,Big Island,Manuka Nature Trail,-155.820314,19.114519
+C. elegans,C-1884,S-12214,Leaf litter,Big Island,Manuka Nature Trail,-155.820314,19.114519
+C. elegans,C-1884,S-12006,Leaf litter,Big Island,Manuka Nature Trail,-155.820314,19.114519
+C. tropicalis,C-1321,S-10420,Fruit,Oahu,Aiea Loop Trail,-157.891489,21.397744
+C. tropicalis,C-0631,S-10661,Leaf litter,Oahu,Aiea Loop Trail,-157.900511,21.395786
+C. tropicalis,C-0628,S-10645,Leaf litter,Oahu,Aiea Loop Trail,-157.900228,21.394489
+C. tropicalis,C-0628,S-10647,Leaf litter,Oahu,Aiea Loop Trail,-157.900228,21.394489
+C. tropicalis,C-0628,S-10672,Leaf litter,Oahu,Aiea Loop Trail,-157.900228,21.394489
+C. tropicalis,C-0612,S-10629,Fruit,Oahu,Ualaka`a Trail,-157.819369,21.317253
+C. tropicalis,C-0612,S-10628,Fruit,Oahu,Ualaka`a Trail,-157.819369,21.317253
+C. tropicalis,C-0612,S-10626,Fruit,Oahu,Ualaka`a Trail,-157.819369,21.317253
+C. tropicalis,C-0612,S-10627,Fruit,Oahu,Ualaka`a Trail,-157.819369,21.317253
