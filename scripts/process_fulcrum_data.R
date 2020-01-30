@@ -535,5 +535,9 @@ save(file = "data/fulcrum/fulcrum_dat.Rda", fulcrum_dat)
 ### 13: project specific report                                 ###
 ###################################################################
 
+rmarkdown::render(glue::glue("{getwd()}/scripts/collection_report.Rmd"), 
+                  output_file = "collection_report_test.html")
+
+
 
 
