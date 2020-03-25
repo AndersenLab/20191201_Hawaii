@@ -536,7 +536,7 @@ save(file = "data/fulcrum/fulcrum_dat.Rda", fulcrum_dat)
 ###################################################################
 
 rmarkdown::render(glue::glue("{getwd()}/scripts/collection_report.Rmd"), 
-                  output_file = "collection_report_test.html")
+                  output_file = glue::glue("collection_report_{unique(fulcrum_dat$project_id)}.html"))
 
 
 
