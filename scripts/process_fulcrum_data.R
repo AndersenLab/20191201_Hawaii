@@ -520,7 +520,7 @@ corrected_collections <- bind_cols(need_corrections, collection_data_871) %>%
   dplyr::mutate(substrate_notes = "substrate temperature not measured because collections were processed in Volcano one day after collection in Kalopa")
   
 # join corrected_collections back into processed dataframe
-fulcrum_dat <- df5 %>%
+`2019DecemberHawaii_fulcrum` <- df5 %>%
   dplyr::filter(!(collection_id %in% need_corrections$collection_id)) %>%
   dplyr::full_join(corrected_collections)
 
@@ -529,7 +529,7 @@ fulcrum_dat <- df5 %>%
 ###################################################################
 
 # export R dataframe
-save(file = "data/fulcrum/fulcrum_dat.Rda", fulcrum_dat)
+save(file = "data/fulcrum/2019DecemberHawaii_fulcrum.Rda", '2019DecemberHawaii_fulcrum')
 
 ###################################################################
 ### 13: project specific report                                 ###
