@@ -20,5 +20,5 @@ six==1.10.0
 traitlets==4.3.2
 wcwidth==0.1.7
 pylabels==1.2.1
-reportlab==3.4.0
+reportlab==3.5.55
 qrcode==5.3
